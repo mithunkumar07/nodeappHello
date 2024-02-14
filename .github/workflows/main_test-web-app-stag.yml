@@ -69,5 +69,5 @@ jobs:
           slot-name: 'Production'
           package: .
       - name: Start the Node.js app
-        run: npm run start
+        run: npm run start & echo $! > node.pid 
           
